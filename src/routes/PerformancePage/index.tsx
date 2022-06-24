@@ -1,4 +1,5 @@
 import { TripleImg, PlayStoreImg, AppleBadgeImg } from '../../assets/images'
+import Metrics from '../../components/Metrics'
 
 import {
   PerformanceSection,
@@ -17,15 +18,9 @@ const PerformancePage = () => {
       </ContentLogoBox>
       <StatisticBox>
         <MetricsList>
-          <li>
-            <strong>700만 명</strong>의 여행자
-          </li>
-          <li>
-            <strong>100만 개</strong>의 여행 리뷰
-          </li>
-          <li>
-            <strong>470만 개</strong>의 여행 일정
-          </li>
+          <Metrics number={700} unit="만 명" desc="의 여행자" />
+          <Metrics number={100} unit="만 개" desc="의 여행 리뷰" />
+          <Metrics number={470} unit="만 개" desc="의 여행 일정" />
         </MetricsList>
         <AwardsBox>
           <div>
