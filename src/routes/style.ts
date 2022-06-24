@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
-const Container = styled.div`
-  padding: 0;
-  margin: 0;
+const MainContainer = styled.main`
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
 `
 
-export { Container }
+export { MainContainer }

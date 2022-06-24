@@ -1,7 +1,12 @@
-import { Container } from './style'
+import PerformancePage from './PerformancePage'
+import { MainContainer } from './style'
 
 function App() {
-  return <Container>TRIPLEFrontend-assignment</Container>
+  return (
+    <MainContainer>
+      <PerformancePage />
+    </MainContainer>
+  )
 }
 
 export default App

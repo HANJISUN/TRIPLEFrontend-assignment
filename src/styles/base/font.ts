@@ -5,8 +5,8 @@ const font = css`
   button,
   input,
   textarea {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-feature-settings: 'tnum';
   }
 
@@ -16,7 +16,7 @@ const font = css`
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
       margin: 0;
-      -webkit-appearance: none;
+      appearance: none;
     }
   }
 `
