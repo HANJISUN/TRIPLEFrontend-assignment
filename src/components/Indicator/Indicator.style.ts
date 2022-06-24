@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 const IndicatorItem = styled.li`
-  font-size: 36px;
   margin-bottom: 20px;
+  font-size: 36px;
   color: ${({ theme }) => theme.colors.gray};
   letter-spacing: -1px;
 

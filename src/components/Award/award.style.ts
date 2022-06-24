@@ -3,8 +3,8 @@ import styled from 'styled-components'
 const AwardItem = styled.li`
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-right: 40px;
 
   img {
@@ -14,10 +14,10 @@ const AwardItem = styled.li`
   }
 
   p {
-    color: ${({ theme }) => theme.colors.gray800};
     font-size: 14px;
-    line-height: 22px;
     font-weight: bold;
+    line-height: 22px;
+    color: ${({ theme }) => theme.colors.gray800};
   }
 `
 

@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 const PerformanceSection = styled.div`
   display: flex;
-  justify-content: center;
   align-items: flex-start;
-  margin: 0 auto;
+  justify-content: center;
   width: 1200px;
+  margin: 0 auto;
 
   > div {
     flex: 1;
@@ -16,7 +16,7 @@ const ContentLogoBox = styled.div`
   position: relative;
   text-align: center;
   opacity: 0;
-  animation: ${({ theme }) => theme.animations.fadeIn} 0.7s ease 0s forwards;
+  animation: ${({ theme }) => theme.animations.fadeIn} 1s ease 0s forwards;
 
   img {
     width: 400px;
@@ -25,11 +25,11 @@ const ContentLogoBox = styled.div`
 
   p {
     position: absolute;
-    left: 50%;
     bottom: 47px;
-    transform: translateX(-50%);
+    left: 50%;
     font-size: 15px;
     color: ${({ theme }) => theme.colors.gray700};
+    transform: translateX(-50%);
   }
 `
 
@@ -44,12 +44,12 @@ const IndicatorsList = styled.ul`
 `
 
 const AwardsList = styled.ul`
-  opacity: 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  animation: ${({ theme }) => theme.animations.fadeIn} 1s ease 0.7s forwards;
+  justify-content: center;
+  opacity: 0;
+  animation: ${({ theme }) => theme.animations.fadeIn} 1s ease 1s forwards;
 `
 
 export {
