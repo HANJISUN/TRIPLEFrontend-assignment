@@ -1,5 +1,6 @@
 import { TripleImg, PlayStoreImg, AppleBadgeImg } from '../../assets/images'
 import Metrics from '../../components/Metrics'
+import Award from '../../components/Award'
 
 import {
   PerformanceSection,
@@ -23,18 +24,18 @@ const PerformancePage = () => {
           <Metrics number={470} unit="만 개" desc="의 여행 일정" />
         </MetricsList>
         <AwardsBox>
-          <div>
-            <img src={PlayStoreImg} alt="play-store-img" />
-            <p>
-              2018 구글 플레이스토어 <br /> 올해의 앱 최우수상 수상
-            </p>
-          </div>
-          <div>
-            <img src={AppleBadgeImg} alt="apple-badge-img" />
-            <p>
-              2018 애플 앱스토어 <br /> 오늘의 여행앱 선정
-            </p>
-          </div>
+          <Award
+            imgSrc={PlayStoreImg}
+            imgAlt="play-store-img"
+            firstLine="2018 구글 플레이스토어"
+            secondLine="올해의 앱 최우수상 수상"
+          />
+          <Award
+            imgSrc={AppleBadgeImg}
+            imgAlt="apple-badge-img"
+            firstLine="2018 애플 앱스토어"
+            secondLine="오늘의 여행앱 선정"
+          />
         </AwardsBox>
       </StatisticBox>
     </PerformanceSection>
