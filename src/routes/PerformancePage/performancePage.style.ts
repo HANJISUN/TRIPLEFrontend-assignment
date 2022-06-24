@@ -15,6 +15,8 @@ const PerformanceSection = styled.div`
 const ContentLogoBox = styled.div`
   position: relative;
   text-align: center;
+  opacity: 0;
+  animation: ${({ theme }) => theme.animations.fadeIn} 0.7s ease 0s forwards;
 
   img {
     width: 400px;
@@ -42,10 +44,12 @@ const IndicatorsList = styled.ul`
 `
 
 const AwardsList = styled.ul`
+  opacity: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  animation: ${({ theme }) => theme.animations.fadeIn} 1s ease 0.7s forwards;
 `
 
 export {
