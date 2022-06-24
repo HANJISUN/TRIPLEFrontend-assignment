@@ -1,14 +1,14 @@
 import { TripleImg, PlayStoreImg, AppleBadgeImg } from '../../assets/images'
-import Metrics from '../../components/Metrics'
+import Indicator from '../../components/Indicator'
 import Award from '../../components/Award'
 
 import {
   PerformanceSection,
   ContentLogoBox,
   StatisticBox,
-  MetricsList,
-  AwardsBox,
-} from './performance.style'
+  IndicatorsList,
+  AwardsList,
+} from './performancePage.style'
 
 const PerformancePage = () => {
   return (
@@ -18,12 +18,12 @@ const PerformancePage = () => {
         <p>2021년 12월 기준</p>
       </ContentLogoBox>
       <StatisticBox>
-        <MetricsList>
-          <Metrics number={700} unit="만 명" desc="의 여행자" />
-          <Metrics number={100} unit="만 개" desc="의 여행 리뷰" />
-          <Metrics number={470} unit="만 개" desc="의 여행 일정" />
-        </MetricsList>
-        <AwardsBox>
+        <IndicatorsList>
+          <Indicator number={700} unit="만 명" desc="의 여행자" />
+          <Indicator number={100} unit="만 개" desc="의 여행 리뷰" />
+          <Indicator number={470} unit="만 개" desc="의 여행 일정" />
+        </IndicatorsList>
+        <AwardsList>
           <Award
             imgSrc={PlayStoreImg}
             imgAlt="play-store-img"
@@ -36,7 +36,7 @@ const PerformancePage = () => {
             firstLine="2018 애플 앱스토어"
             secondLine="오늘의 여행앱 선정"
           />
-        </AwardsBox>
+        </AwardsList>
       </StatisticBox>
     </PerformanceSection>
   )

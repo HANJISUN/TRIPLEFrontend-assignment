@@ -37,26 +37,11 @@ const StatisticBox = styled.div`
   justify-content: center;
 `
 
-const MetricsList = styled.ul`
+const IndicatorsList = styled.ul`
   width: 448px;
-
-  li {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: ${({ theme }) => theme.colors.gray};
-    letter-spacing: -1px;
-
-    strong {
-      font-weight: bold;
-    }
-  }
-
-  li:last-child {
-    margin-bottom: 50px;
-  }
 `
 
-const AwardsBox = styled.ul`
+const AwardsList = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -67,6 +52,6 @@ export {
   PerformanceSection,
   ContentLogoBox,
   StatisticBox,
-  MetricsList,
-  AwardsBox,
+  IndicatorsList,
+  AwardsList,
 }

@@ -1,4 +1,4 @@
-import { AwardItemBox } from './award.style'
+import { AwardItem } from './award.style'
 
 interface Props {
   imgSrc: string
@@ -9,14 +9,14 @@ interface Props {
 
 const Award = ({ imgSrc, imgAlt, firstLine, secondLine }: Props) => {
   return (
-    <AwardItemBox>
+    <AwardItem>
       <img src={imgSrc} alt={imgAlt} />
       <p>
         {firstLine}
         <br />
         {secondLine}
       </p>
-    </AwardItemBox>
+    </AwardItem>
   )
 }
 

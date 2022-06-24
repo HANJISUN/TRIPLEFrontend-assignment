@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const MetricsItem = styled.li`
+const IndicatorItem = styled.li`
   font-size: 36px;
   margin-bottom: 20px;
   color: ${({ theme }) => theme.colors.gray};
@@ -15,4 +15,4 @@ const MetricsItem = styled.li`
   }
 `
 
-export { MetricsItem }
+export { IndicatorItem }

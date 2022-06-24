@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const AwardItemBox = styled.div`
+const AwardItem = styled.li`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -21,4 +21,4 @@ const AwardItemBox = styled.div`
   }
 `
 
-export { AwardItemBox }
+export { AwardItem }
