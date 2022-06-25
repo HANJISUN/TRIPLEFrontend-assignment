@@ -8,9 +8,9 @@ interface Props {
 
 const Indicator = ({ number, unit, desc }: Props) => {
   return (
-    <IndicatorItem>
+    <IndicatorItem number={number}>
       <strong>
-        {number}
+        <span />
         {unit}
       </strong>
       {desc}
