@@ -49,7 +49,7 @@ const AwardsList = styled.ul`
   align-items: center;
   justify-content: center;
   opacity: 0;
-  animation: ${({ theme }) => theme.animations.fadeIn} 1s ease 1s forwards;
+  animation: ${({ theme }) => theme.animations.fadeIn} 1s ease 0.3s forwards;
 `
 
 export {
