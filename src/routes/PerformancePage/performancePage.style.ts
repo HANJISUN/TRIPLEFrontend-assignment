@@ -16,7 +16,7 @@ const ContentLogoBox = styled.div`
   position: relative;
   text-align: center;
   opacity: 0;
-  animation: ${({ theme }) => theme.animations.fadeIn} 1s ease 0s forwards;
+  animation: ${({ theme }) => theme.animations.fadeIn} 0.7s ease 0s forwards;
 
   img {
     width: 400px;
@@ -41,6 +41,8 @@ const StatisticBox = styled.div`
 
 const IndicatorsList = styled.ul`
   width: 448px;
+  opacity: 0;
+  animation: ${({ theme }) => theme.animations.fadeIn} 0.7s ease 0.2s forwards;
 `
 
 const AwardsList = styled.ul`
@@ -49,7 +51,7 @@ const AwardsList = styled.ul`
   align-items: center;
   justify-content: center;
   opacity: 0;
-  animation: ${({ theme }) => theme.animations.fadeIn} 1s ease 0.3s forwards;
+  animation: ${({ theme }) => theme.animations.fadeIn} 0.7s ease 0.4s forwards;
 `
 
 export {

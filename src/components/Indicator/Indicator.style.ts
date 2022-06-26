@@ -30,7 +30,7 @@ const IndicatorItem = styled.li<NumberProp>`
     font-weight: bold;
 
     span {
-      animation: ${(props) => counter(props.number)} 1.2s
+      animation: ${(props) => counter(props.number)} 2s
         cubic-bezier(0, 0.8, 0, 1);
 
       --num: ${(props) => props.number};
